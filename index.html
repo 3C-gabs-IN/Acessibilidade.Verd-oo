@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palmeiras Oficial - Acessível</title>
+
+  <!-- Fonte Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Palmeiras Oficial</h1>
+    <nav aria-label="Menu principal" role="tablist">
+      <button role="tab" class="nav-btn active" data-target="historia" aria-controls="historia" aria-selected="true" tabindex="0">História</button>
+      <button role="tab" class="nav-btn" data-target="titulos" aria-controls="titulos" aria-selected="false" tabindex="-1">Títulos</button>
+      <button role="tab" class="nav-btn" data-target="noticias" aria-controls="noticias" aria-selected="false" tabindex="-1">Notícias</button>
+      <button role="tab" class="nav-btn" data-target="galeria" aria-controls="galeria" aria-selected="false" tabindex="-1">Galeria</button>
+      <button role="tab" class="nav-btn" data-target="elenco" aria-controls="elenco" aria-selected="false" tabindex="-1">Elenco</button>
+      <button role="tab" class="nav-btn" data-target="estadio" aria-controls="estadio" aria-selected="false" tabindex="-1">Estádio</button>
+      <button role="tab" class="nav-btn" data-target="contato" aria-controls="contato" aria-selected="false" tabindex="-1">Contato</button>
+    </nav>
+
+    <div aria-label="Controles de acessibilidade" style="margin-top: 0.5rem;">
+      <button id="toggleDarkMode" aria-label="Alternar modo escuro" aria-pressed="false">🌙</button>
+      <button id="btnAumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+      <button id="btnDiminuirFonte" aria-label="Diminuir tamanho da fonte">A−</button>
+      <button id="btnResetarFonte" aria-label="Resetar tamanho da fonte">A</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="historia" class="content-section active" role="tabpanel" tabindex="0" aria-live="polite">
+      <h2>Sobre o Palmeiras</h2>
+      <p>O Palestra Itália foi fundado em 26 de agosto de 1914 por imigrantes italianos em São Paulo, inspirado nos clubes Pro Vercelli e Torino. A fundação aconteceu após duas reuniões no Salão Alhambra, e seu primeiro presidente foi Ezequiel Simone. Inicialmente, o clube tinha finalidades sociais e esportivas, com a maioria dos fundadores trabalhando nas Indústrias Matarazzo.
+      O clube realizou seu primeiro jogo em janeiro de 1915, vencendo o Savoia por 2 a 0. Em 1916, estreou no Campeonato Paulista após apoiar a APEA com a ajuda da Matarazzo. Em 1920, comprou o Parque Antarctica e, no mesmo ano, conquistou seu primeiro título paulista. Na década de 1920, destacou-se com campanhas invictas e conquistas importantes, inclusive internacionais.
+      Na década de 1930, com o profissionalismo no futebol, o Palestra viveu seu auge: venceu o Paulista de 1932 de forma invicta, conquistou o bicampeonato em 1933, além do Torneio Rio–São Paulo, e goleou o Corinthians por 8 a 0, na maior derrota da história do rival.
+      Com a Segunda Guerra Mundial, o Brasil rompeu relações com os países do Eixo, forçando o clube a mudar seu nome. Após tentativas de adaptação, em 14 de setembro de 1942, passou a se chamar Sociedade Esportiva Palmeiras, mantendo o "P" e as cores verde e branca. A estreia com o novo nome foi marcada pela Arrancada Heroica, vencendo o São Paulo por 3 a 1 e conquistando o título paulista.
+      A partir de 1943, o Palmeiras entrou em uma nova fase de glórias. Conquistou títulos importantes em 1944, 1947 e 1950 (o "Jogo da Lama"), e fez sua primeira excursão europeia em 1949, consolidando-se como uma das maiores forças do futebol brasileiro.</p>
+      <img src="img/allianz.jpg" alt="Estádio Allianz Parque" />
+      <p>O Verdão tem uma história repleta de títulos e uma torcida apaixonada que lota seus estádios.</p>
+    </section>
+
+    <section id="titulos" class="content-section" role="tabpanel" tabindex="-1" aria-live="polite">
+      <h2>Títulos Importantes</h2>
+      <ul>
+        <li>12x Campeão Brasileiro (1960, 1967, 1967, 1969, 1972, 1973, 1993, 1994, 2016, 2018, 2022, 2023)</li>
+        <li>Copa do Brasil: 4 títulos (1998, 2012, 2015, 2020)</li>
+        <li>Supercopa do Brasil: 1 título (2023)</li>
+        <li>Recopa Sul-Americana: 1 título (2022)</li>
+        <li>Copa Libertadores da América: 3 títulos (1999, 2020, 2021)</li>
+        <li>Copa dos Campeões: 1 título (2000)</li>
+        <li>Campeonato Paulista: 26 títulos</li>
+        <li>Torneio Rio – São Paulo: 5 títulos</li>
+        <li>Copa Rio: 1 título (1951)</li>
+        <li>Copa Mercosul: 1 título (1998)</li>
+      </ul>
+      <img src="img/taca_libertadores.jpg" alt="Taça da Copa Libertadores" />
+    </section>
+
+    <section id="noticias" class="content-section" role="tabpanel" tabindex="-1" aria-live="polite">
+      <h2>Últimas Notícias</h2>
+      <ul>
+        <li><a href="https://ge.globo.com/futebol/times/palmeiras/noticia/2025/08/05/escalacao-do-palmeiras-zagueiros-seguem-fora-de-treino-e-abel-vai-precisar-mudar-contra-corinthians.ghtml" target="_blank" rel="noopener">Palmeiras com desfalques no Derby</a></li>
+        <li><a href="https://ge.globo.com/futebol/times/palmeiras/noticia/2025/08/05/palmeiras-anuncia-novo-patrocinador-para-o-calcao-veja-detalhes-e-quando-estreia.ghtml" target="_blank" rel="noopener">Palmeiras anuncia novo patrocínio</a></li>
+      </ul>
+    </section>
+
+    <section id="galeria" class="content-section" role="tabpanel" tabindex="-1" aria-live="polite">
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <img src="img/evair.jpg" alt="Evair, ídolo do Palmeiras" />
+        <img src="img/abel.jpg" alt="Abel Ferreira, técnico do Palmeiras" />
+        <img src="img/escudo.png" alt="Escudo do Palmeiras" />
+        <img src="img/palmeiras-1.jpg" alt="Torcida do Palmeiras em jogo" />
+        <img src="img/palmeiras-2.jpg" alt="Jogadores comemorando gol" />
+        <img src="img/palmeiras-3.jpg" alt="Vista aérea do Allianz Parque" />
+        <img src="img/time.jpg" alt="Equipe do Palmeiras no campo" />
+        <img src="img/torcida.jpg" alt="Torcida do Palmeiras no estádio" />
+        <img src="img/allianz.jpg" alt="Estádio Allianz Parque iluminado" />
+        <img src="img/taca_libertadores.jpg" alt="Taça da Copa Libertadores" />
+      </div>
+    </section>
+
+    <section id="elenco" class="content-section" role="tabpanel" tabindex="-1" aria-live="polite">
+      <h2>Elenco 2025</h2>
+
+      <h3>Goleiros</h3>
+      <table class="elenco-table" role="grid" aria-label="Tabela dos goleiros do Palmeiras 2025">
+        <thead>
+          <tr>
+            <th>Nome</th><th>POS</th><th>Idade</th><th>Alt</th><th>P</th><th>NAC</th><th>J</th><th>SUB</th><th>D</th><th>GS</th><th>A</th><th>FC</th><th>FS</th><th>CA</th><th>CV</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Marcelo Lomba</td><td>G</td><td>38</td><td>1.88 m</td><td>83 kg</td><td>Brasil</td><td>1</td><td>0</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+          <tr><td>Weverton</td><td>G</td><td>37</td><td>1.88 m</td><td>91 kg</td><td>Brasil</td><td>15</td><td>0</td><td>29</td><td>12</td><td>0</td><td>0</td><td>6</td><td>2</td><td>0</td></tr>
+          <tr><td>Aranha</td><td>G</td><td>20</td><td>—</td><td>—</td><td>Brasil</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Jogadores de Campo</h3>
+      <table class="elenco-table" role="grid" aria-label="Tabela dos jogadores de campo do Palmeiras 2025">
+        <thead>
+          <tr><th>Nome</th><th>POS</th><th>Idade</th><th>Alt</th><th>P</th><th>NAC</th><th>J</th><th>SUB</th><th>G</th><th>A</th><th>TC</th><th>CG</th><th>FC</th><th>FS</th><th>CA</th><th>CV</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Marcos Rocha</td><td>D</td><td>36</td><td>1.75 m</td><td>73 kg</td><td>Brasil</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
+          <tr><td>Bruno Fuchs</td><td>D</td><td>25</td><td>1.88 m</td><td>82 kg</td><td>Brasil</td><td>8</td><td>1</td><td>1</td><td>0</td><td>7</td><td>4</td><td>7</td><td>4</td><td>0</td><td>0</td></tr>
+          <tr><td>Luan</td><td>D</td><td>30</td><td>1.88 m</td><td>84 kg</td><td>Brasil</td><td>6</td><td>2</td><td>0</td><td>0</td><td>2</td><td>2</td><td>6</td><td>3</td><td>0</td><td>0</td></tr>
+          <tr><td>Gustavo Gómez</td><td>D</td><td>31</td><td>1.85 m</td><td>86 kg</td><td>Paraguai</td><td>13</td><td>0</td><td>1</td><td>0</td><td>7</td><td>3</td><td>15</td><td>7</td><td>3</td><td>0</td></tr>
+          <tr><td>Murilo</td><td>D</td><td>27</td><td>1.88 m</td><td>82 kg</td><td>Brasil</td><td>10</td><td>1</td><td>0</td><td>0</td><td>4</td><td>2</td><td>6</td><td>7</td><td>1</td><td>0</td></tr>
+          <tr><td>Vanderlan</td><td>D</td><td>21</td><td>1.83 m</td><td>79 kg</td><td>Brasil</td><td>8</td><td>3</td><td>0</td><td>0</td><td>3</td><td>1</td><td>3</td><td>1</td><td>1</td><td>0</td></tr>
+          <tr><td>Piquerez</td><td>D</td><td>25</td><td>1.83 m</td><td>79 kg</td><td>Uruguai</td><td>13</td><td>1</td><td>1</td><td>0</td><td>11</td><td>5</td><td>9</td><td>10</td><td>2</td><td>0</td></tr>
+          <tr><td>Mayke</td><td>D</td><td>32</td><td>1.78 m</td><td>73 kg</td><td>Brasil</td><td>9</td><td>3</td><td>0</td><td>0</td><td>6</td><td>4</td><td>6</td><td>6</td><td>1</td><td>0</td></tr>
+          <tr><td>García</td><td>D</td><td>22</td><td>1.75 m</td><td>69 kg</td><td>Brasil</td><td>5</td><td>2</td><td>0</td><td>0</td><td>3</td><td>1</td><td>2</td><td>3</td><td>0</td><td>0</td></tr>
+          <tr><td>Rômulo</td><td>M</td><td>22</td><td>1.78 m</td><td>73 kg</td><td>Brasil</td><td>10</td><td>3</td><td>0</td><td>0</td><td>4</td><td>1</td><td>5</td><td>8</td><td>1</td><td>0</td></tr>
+          <tr><td>Aníbal Moreno</td><td>M</td><td>25</td><td>1.78 m</td><td>76 kg</td><td>Argentina</td><td>15</td><td>0</td><td>0</td><td>0</td><td>5</td><td>1</td><td>12</td><td>13</td><td>2</td><td>0</td></tr>
+          <tr><td>Richard Ríos</td><td>M</td><td>24</td><td>1.78 m</td><td>78 kg</td><td>Colômbia</td><td>14</td><td>1</td><td>1</td><td>0</td><td>3</td><td>0</td><td>10</td><td>10</td><td>2</td><td>0</td></tr>
+          <tr><td>Jailson</td><td>M</td><td>25</td><td>1.74 m</td><td>70 kg</td><td>Brasil</td><td>7</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>5</td><td>8</td><td>0</td><td>0</td></tr>
+          <tr><td>Raphael Veiga</td><td>M</td><td>29</td><td>1.78 m</td><td>72 kg</td><td>Brasil</td><td>19</td><td>4</td><td>7</td><td>3</td><td>8</td><td>5</td><td>22</td><td>14</td><td>4</td><td>0</td></tr>
+          <tr><td>Gustavo Scarpa</td><td>M</td><td>29</td><td>1.77 m</td><td>72 kg</td><td>Brasil</td><td>12</td><td>4</td><td>3</td><td>2</td><td>3</td><td>2</td><td>16</td><td>19</td><td>3</td><td>0</td></tr>
+          <tr><td>Endrick</td><td>A</td><td>17</td><td>1.78 m</td><td>70 kg</td><td>Brasil</td><td>18</td><td>6</td><td>12</td><td>2</td><td>8</td><td>6</td><td>20</td><td>18</td><td>4</td><td>0</td></tr>
+          <tr><td>Vitor Roque</td><td>A</td><td>19</td><td>1.75 m</td><td>68 kg</td><td>Brasil</td><td>16</td><td>2</td><td>8</td><td>1</td><td>6</td><td>2</td><td>18</td><td>14</td><td>2</td><td>0</td></tr>
+          <tr><td>Deyverson</td><td>A</td><td>31</td><td>1.81 m</td><td>75 kg</td><td>Brasil</td><td>10</td><td>3</td><td>2</td><td>1</td><td>6</td><td>4</td><td>12</td><td>10</td><td>1</td><td>0</td></tr>
+          <tr><td>Rony</td><td>A</td><td>30</td><td>1.73 m</td><td>71 kg</td><td>Brasil</td><td>20</td><td>3</td><td>8</td><td>2</td><td>9</td><td>3</td><td>16</td><td>12</td><td>4</td><td>0</td></tr>
+          <tr><td>Gustavo Scarpa</td><td>M</td><td>29</td><td>1.77 m</td><td>72 kg</td><td>Brasil</td><td>12</td><td>4</td><td>3</td><td>2</td><td>3</td><td>2</td><td>16</td><td>19</td><td>3</td><td>0</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="estadio" class="content-section" role="tabpanel" tabindex="-1" aria-live="polite">
+      <h2>Estádio Allianz Parque</h2>
+      <p>O Allianz Parque, também conhecido como Palestra Itália, é a casa do Palmeiras desde 2014. Localizado em São Paulo, é um estádio moderno com capacidade para mais de 43 mil torcedores, oferecendo conforto e ótima infraestrutura para jogos e eventos.</p>
+      <img src="img/allianz.jpg" alt="Imagem do estádio Allianz Parque" />
+    </section>
+
+    <section id="contato" class="content-section" role="tabpanel" tabindex="-1" aria-live="polite">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br /><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <footer>
+  <p>Projeto criado por Gabriele Rabelo do 3ºC. Todos os direitos autorais reservados.</p>
+</footer>
+
+</body>
+</html>
